@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Regisztráció</h1>
+    
+    <p>Megszólítás*</p>
+
+    <form>
+        <input type="radio" name="education" value="Woman">Úrhölgy
+        <input type="radio" name="education" value="Man">Úr
+    </form>
+    <table>
+        <tr>
+            <td>
+                <p>Vezetéknév*</p>
+                <p><input type="text" id="Vezetéknév"></p>
+            </td>
+            <td>
+                <p>Keresztnév*</p>
+                <p><input type="text" id="Keresztnév"></p>
+            </td>
+            
+        </tr>
+    </table>
+    
+
+    <p>Születési dátum*</p>
+
+    <form>
+        <input type="date" name="Szuletes">
+    </form>
+
+    <table>
+        <tr>
+            <td>
+                <p>E-mail cím*</p>
+                <p><input type="text" id="E-mail"></p>
+            </td>
+            <td>
+                <p>E-mail cím ismételt megadása*</p>
+                <p><input type="text" id="E-mailagain"></p>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <p>Jelszó*</p>
+                <p><input type="text" id="Jelszo"></p>
+            </td>
+            <td>
+                <p>Jelszó ismételt megadása*</p>
+                <p><input type="text" id="Jelszoagain"></p>
+            </td>
+        </tr>
+    </table>
+            
+    <p>*-kötelező mezők</p>
+    <p>
+        <label for="Ertem" class="checkboxStyle">
+        <input type="checkbox" name="box" value="Ertem">
+        Tudomásul vettem és elfogadom az <u>Általános Szerződési Feltételek</u>-et, valamint az <u>Adatkezelési tájékoztató</u>-ban foglaltakat.*</label>
+    </p>
+    <p>
+        <label for="reklam" class="checkboxStyle">
+        <input type="checkbox" name="box" value="reklam">
+        Szeretnék feliratkozni a <b>A dm Hírlevelem</b>-re. A hírlevélről bármikor leiratkozhatok. A <u>Hozzájárulás a dm hírlevélhez</u>-t elolvastam és elfogadom.</label>
+    </p>
+    <form id="gomb">
+        <input type="button" value="Tovább">
+    </form>
+    
+</body>
+</html>

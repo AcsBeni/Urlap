@@ -1,0 +1,16 @@
+body{
+    
+    width: 30%;
+    margin:0 auto;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+}
+table{
+    width: 80%;
+}
+#gomb{
+    text-align: right;
+    
+}
