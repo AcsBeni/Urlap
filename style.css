@@ -1,6 +1,6 @@
 body{
     
-    width: 30%;
+    width: 40%;
     margin:0 auto;
 }
 h1{
@@ -13,4 +13,7 @@ table{
 #gomb{
     text-align: right;
     
+}
+.eves{
+    display: flex;
 }

@@ -18,33 +18,50 @@
     <table>
         <tr>
             <td>
-                <p>Vezetéknév*</p>
-                <p><input type="text" id="Vezetéknév"></p>
+                <label> Vezetéknév*</label>
+                <input type="text" id="Vezetéknév">
             </td>
             <td>
-                <p>Keresztnév*</p>
-                <p><input type="text" id="Keresztnév"></p>
+                <label>Keresztnév*</label>
+                <input type="text" id="Keresztnév">
             </td>
             
         </tr>
     </table>
     
 
-    <p>Születési dátum*</p>
+    <label> Születési dátum*</label>
 
-    <form>
-        <input type="date" name="Szuletes">
-    </form>
-
+    <table class="eves">
+        <tr>
+            <td>
+                <form>
+                    <input type="number" name="év" value="ÉÉÉÉ" min="1900" max="2023" placeholder="ÉÉÉÉ">
+                </form>
+            </td>
+            <td>
+                <form>
+                    <input type="number" name="hónap" value="HH" min="1" max="12" placeholder="HH">
+                </form>
+            </td>
+            <td>
+                <form>
+                    <input type="number" name="nap" value="NN" min="1" max="31" placeholder="NN" >
+                </form>
+            </td>
+        </tr>
+    </table>
+    
+    <p></p>
     <table>
         <tr>
             <td>
-                <p>E-mail cím*</p>
-                <p><input type="text" id="E-mail"></p>
+                <label>E-mail cím*</label>
+                <input type="email" id="E-mail">
             </td>
             <td>
-                <p>E-mail cím ismételt megadása*</p>
-                <p><input type="text" id="E-mailagain"></p>
+                <label>E-mail cím ismételt megadása*</label>
+                <input type="email" id="E-mailagain">
             </td>
         </tr>
     </table>
@@ -52,24 +69,24 @@
     <table>
         <tr>
             <td>
-                <p>Jelszó*</p>
-                <p><input type="text" id="Jelszo"></p>
+                <label>Jelszó*</label>
+                <input type="password" id="Jelszo">
             </td>
             <td>
-                <p>Jelszó ismételt megadása*</p>
-                <p><input type="text" id="Jelszoagain"></p>
+                <label>Jelszó ismételt megadása*</label>
+                <input type="password" id="Jelszoagain">
             </td>
         </tr>
     </table>
             
-    <p>*-kötelező mezők</p>
+    <p><label>*-kötelező mezők</label> </p>
     <p>
-        <label for="Ertem" class="checkboxStyle">
+        <label>
         <input type="checkbox" name="box" value="Ertem">
         Tudomásul vettem és elfogadom az <u>Általános Szerződési Feltételek</u>-et, valamint az <u>Adatkezelési tájékoztató</u>-ban foglaltakat.*</label>
     </p>
     <p>
-        <label for="reklam" class="checkboxStyle">
+        <label>
         <input type="checkbox" name="box" value="reklam">
         Szeretnék feliratkozni a <b>A dm Hírlevelem</b>-re. A hírlevélről bármikor leiratkozhatok. A <u>Hozzájárulás a dm hírlevélhez</u>-t elolvastam és elfogadom.</label>
     </p>
