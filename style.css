@@ -8,12 +8,23 @@ h1{
     color: darkblue;
 }
 table{
-    width: 80%;
+    width: 100%;
 }
 #gomb{
     text-align: right;
     
 }
-.eves{
-    display: flex;
+
+button{
+    border-radius: 40%;
+    background-color: blue;
+    color: #fff;
+    
+}
+.kisebb{
+    display: inline-block;
+    width: 50%;
+}
+.teljes{
+    width: 100%;
 }

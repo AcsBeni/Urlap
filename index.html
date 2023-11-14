@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Űrlap</title>
 </head>
 <body>
     <h1>Regisztráció</h1>
@@ -19,65 +19,88 @@
         <tr>
             <td>
                 <label> Vezetéknév*</label>
-                <input type="text" id="Vezetéknév">
             </td>
             <td>
                 <label>Keresztnév*</label>
-                <input type="text" id="Keresztnév">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+                <input style="width: 16em" type="text" id="Vezetéknév">
+            </td>
+            <td>
+                
+                <input style="width: 16em" type="text" id="Keresztnév">
             </td>
             
         </tr>
-    </table>
-    
-
-    <label> Születési dátum*</label>
-
-    <table class="eves">
         <tr>
             <td>
+                <label> Születési dátum*</label>
+            </td>
+        </tr>
+        <tr class="kisebb"  >
+            <td>
+                
                 <form>
-                    <input type="number" name="év" value="ÉÉÉÉ" min="1900" max="2023" placeholder="ÉÉÉÉ">
+                    <input style="width: 5em" type="number" name="év" value="ÉÉÉÉ" min="1900" max="2023" placeholder="ÉÉÉÉ">
                 </form>
             </td>
             <td>
                 <form>
-                    <input type="number" name="hónap" value="HH" min="1" max="12" placeholder="HH">
+                    <input style="width: 5em" type="number" name="hónap" value="HH" min="1" max="12" placeholder="HH">
                 </form>
             </td>
             <td>
                 <form>
-                    <input type="number" name="nap" value="NN" min="1" max="31" placeholder="NN" >
+                    <input style="width: 5em" type="number" name="nap" value="NN" min="1" max="31" placeholder="NN" >
                 </form>
             </td>
         </tr>
-    </table>
-    
-    <p></p>
-    <table>
         <tr>
             <td>
                 <label>E-mail cím*</label>
-                <input type="email" id="E-mail">
             </td>
             <td>
                 <label>E-mail cím ismételt megadása*</label>
-                <input type="email" id="E-mailagain">
             </td>
         </tr>
-    </table>
-
-    <table>
+        <tr>
+            <td>
+                
+                <input style="width: 16em" type="email" id="E-mail">
+            </td>
+            <td>
+                
+                <input style="width: 16em" type="email" id="E-mailagain">
+            </td>
+        </tr>
         <tr>
             <td>
                 <label>Jelszó*</label>
-                <input type="password" id="Jelszo">
             </td>
             <td>
                 <label>Jelszó ismételt megadása*</label>
-                <input type="password" id="Jelszoagain">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+                <input style="width: 16em" type="password" id="Jelszo">
+            </td>
+            <td>
+                
+                <input style="width: 16em " type="password" id="Jelszoagain">
             </td>
         </tr>
     </table>
+    
+
+    
+
+    <p></p>
+
             
     <p><label>*-kötelező mezők</label> </p>
     <p>
@@ -91,7 +114,7 @@
         Szeretnék feliratkozni a <b>A dm Hírlevelem</b>-re. A hírlevélről bármikor leiratkozhatok. A <u>Hozzájárulás a dm hírlevélhez</u>-t elolvastam és elfogadom.</label>
     </p>
     <form id="gomb">
-        <input type="button" value="Tovább">
+        <button>Tovább</button>
     </form>
     
 </body>
